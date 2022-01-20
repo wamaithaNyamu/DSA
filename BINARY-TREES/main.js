@@ -20,8 +20,8 @@ a.right = c;
 b.left  = d;
 b.right = e;
 c.right = f;
-
-let results = depthFirstTraversal(a)
-console.log(results)
-results = DepthFirstRecursive(a)
+//
+// let results = depthFirstTraversal(a)
+// console.log(results)
+let results = DepthFirstRecursive(a)
 console.log(results)
