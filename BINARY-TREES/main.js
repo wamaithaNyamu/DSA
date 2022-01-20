@@ -1,4 +1,5 @@
 import {depthFirstTraversal} from "./depth-first-traversal.js";
+import {DepthFirstRecursive} from './depth-first-recursive.js'
 class Node{
     constructor(val) {
         this.val = val;
@@ -20,5 +21,7 @@ b.left  = d;
 b.right = e;
 c.right = f;
 
-const results = depthFirstTraversal(a)
+let results = depthFirstTraversal(a)
+console.log(results)
+results = DepthFirstRecursive(a)
 console.log(results)
