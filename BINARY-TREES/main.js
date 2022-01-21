@@ -1,5 +1,8 @@
 import {depthFirstTraversal} from "./depth-first-traversal.js";
 import {DepthFirstRecursive} from './depth-first-recursive.js'
+import {BreadthFirstTraversal} from './breadth-first-traversal.js'
+import {treeIncludes,treeIncludesRecursiveDepthFirst} from "./tree-includes.js";
+
 class Node{
     constructor(val) {
         this.val = val;
@@ -21,7 +24,17 @@ b.left  = d;
 b.right = e;
 c.right = f;
 //
-// let results = depthFirstTraversal(a)
-// console.log(results)
-let results = DepthFirstRecursive(a)
-console.log(results)
+let results_depthFirstTraversal = depthFirstTraversal(a)
+console.log(results_depthFirstTraversal)
+let results_DepthFirstRecursive = DepthFirstRecursive(a)
+console.log(results_DepthFirstRecursive)
+let results_BreadthFirstTraversal = BreadthFirstTraversal(a)
+console.log(results_BreadthFirstTraversal)
+
+let results_treeIncludes = treeIncludes(a,'e')
+
+console.log(results_treeIncludes)
+
+let results_treeIncludesRecursiveDepthFirst = treeIncludesRecursiveDepthFirst(a,'e')
+
+console.log(results_treeIncludesRecursiveDepthFirst)
