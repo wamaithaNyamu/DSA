@@ -3,7 +3,8 @@ import {DepthFirstRecursive} from './depth-first-recursive.js'
 import {BreadthFirstTraversal} from './breadth-first-traversal.js'
 import {treeIncludes,treeIncludesRecursiveDepthFirst} from "./tree-includes.js";
 import {treeSumRecursion,treeSumIterative} from "./tree-sum.js";
-
+import {treeMinIterativeDepthFirst,treeMinIterativeBreadthFirst,treeMinIterativeRecursive} from "./tree-min.js";
+import {maxRootToLeafPathSum} from "./max-root-to-leaf-path-sum.js";
 class Node{
     constructor(val) {
         this.val = val;
@@ -53,6 +54,20 @@ let results_treeSumRecursion = treeSumRecursion(a)
 console.log(results_treeSumRecursion)
 
 
-let results_treeSumIterative= treeSumRecursion(a)
+let results_treeSumIterative= treeSumIterative(a)
 
 console.log(results_treeSumIterative)
+
+let results_treeMinIterativeDepthFirst = treeMinIterativeDepthFirst(a)
+console.log(results_treeMinIterativeDepthFirst)
+
+
+let results_treeMinIterativeBreadthFirst = treeMinIterativeBreadthFirst(a)
+console.log(results_treeMinIterativeBreadthFirst)
+
+let results_treeMinIterativeRecursive = treeMinIterativeRecursive(a)
+console.log(results_treeMinIterativeRecursive)
+
+
+let results_maxRootToLeafPathSum = maxRootToLeafPathSum(a)
+console.log(results_maxRootToLeafPathSum)
